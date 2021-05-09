@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 public class DeleteCustomerAPI extends BaseTest {
 
 	public static Response sendDeleteRequestToDeleteCustomerWithValidID(Hashtable<String, String> data) {
-
+//inside delete customer API
 		Response response = given().auth().basic(config.getProperty("vaildSecretKey"), "")
 				.delete(config.getProperty("customerAPIEndpoint")+"/"+data.get("id"));
 
