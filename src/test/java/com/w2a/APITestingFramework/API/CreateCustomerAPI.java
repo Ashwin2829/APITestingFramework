@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 public class CreateCustomerAPI extends BaseTest {
 
 	public static Response sendPostRequestToCreateCustomerWithValidSecretKey(Hashtable<String, String> data) {
-
+//sample comment
 		Response response = given().auth().basic(config.getProperty("vaildSecretKey"), "")
 				.formParam("email", data.get("email")).formParam("description", data.get("description"))
 				.post(config.getProperty("customerAPIEndpoint"));
